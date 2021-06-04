@@ -1,0 +1,60 @@
+body{
+margin:0;
+background-image: linear-gradient((to top));
+overflow-y:hidden;
+}
+
+.night{
+height: 80vh;
+width: 80vw;
+border: 1px solid black;
+margin: 5rem auto;
+background:url('../images/strand.jpg');
+background-size: cover;
+position: relative;
+box-shadow: 100px 2px 40px rgba(0,0,0,0,4);
+overflow-x: hidden;
+}
+
+.surface{
+height:  240px;
+width: 500%;
+background: url('../images/road.png');
+position: absolute;
+bottom:0%;
+left:0%;
+background-repeat: repeat-x;
+animation:moveRight 8s linear infinite;
+
+
+}
+
+.bus{
+position: absolute;
+bottom: 1%;
+left:10%;
+}
+
+@keyframes moveRight{
+    100%{transform:translateX(-2950px)}
+}
+
+
+
+
+
+
+
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#portrait{
+height: 70px;
+width: 70px;
+border-radius: 70%;
+object-fit:cover;
+}
