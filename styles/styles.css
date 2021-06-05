@@ -27,12 +27,18 @@ background-repeat: repeat-x;
 animation:moveRight 8s linear infinite;
 
 
+
+
+
 }
 
 .bus{
 position: absolute;
-bottom: 1%;
+bottom: 0%;
 left:10%;
+animation: suspension 1s linear infinite;
+
+
 }
 
 @keyframes moveRight{
@@ -40,21 +46,26 @@ left:10%;
 }
 
 
-
-
-
-
-
-
-*{
-
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+@keyframes suspension{
+100%{
+transform:translateY(-1px);
 }
-#portrait{
-height: 70px;
-width: 70px;
-border-radius: 70%;
-object-fit:cover;
+50%{
+    transform:translateY(2px);
+    }
+    0%{
+        transform:translateY(-1px);
+        }
 }
+
+.moveRight{
+    animation:moveRight 8s linear infinite;
+
+}
+
+.suspension{
+    animation: suspension 1s linear infinite;
+}
+
+
+
